@@ -10,7 +10,7 @@ func TipoEndereco(endereco string) string {
 
 	for _, tipo := range tiposValidos {
 		if tipo == primeiraPalavra {
-			return tipo
+			return strings.Title(tipo)
 		}
 	}
 	return "Desconhecido"
